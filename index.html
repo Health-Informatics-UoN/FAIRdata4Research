@@ -18,6 +18,7 @@
       <nav>
         <a href="#datasets">Available Data</a>
         <a href="#access">How to Access</a>
+        <a href="#protecting-data">Protecting Data</a>
         <a href="terms-of-reference.html">Terms of Reference</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -67,10 +68,67 @@
           </tr>
         </tbody>
       </table>
+
+      <h3>What if the data I need is not listed?</h3>
+      <p>
+        Please get in touch with the Data Access team at
+        <a href="mailto:nuhnt.dataaccess@nhs.net">nuhnt.dataaccess@nhs.net</a>. The data you need may still be held by a Data Collection
+        Centre even if it is not yet part of FAIRdata4Research, so it may still be worth applying.
+      </p>
+      <p>
+        Adding new data takes extra work by the data warehouse teams, so timeframes will be longer than for
+        data that is already available. Requests for new data will also be considered as part of our
+        prioritisation process for deciding which data is added next.
+      </p>
     </section>
 
     <section id="access">
       <h2>How to Access Data</h2>
+      <ol class="steps">
+        <li>
+          <strong>Get sponsor approval</strong>
+          Projects using FAIRdata4Research require a sponsor. This should not be the same level of review as might be 
+          expected in other studies, but still required. The sponsor is usually the organisation that employs you and 
+          they will have their own forms for you to complete first to generate a protcol. 
+          
+          They are likely to also to want to see your completed access request form. The form is online but here is a 
+          <a href="assets/forms/FAIRdata4Research_Data_Access_Request_Form.docx" download>Word version</a>
+          to use during this stage.
+        </li>
+        <li>
+          <strong>Approval from FAIRdata4Research Data Access Committee.</strong>
+          To submit a request to use FAIRdata4Research database, please complete this form:
+          <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=slTDN7CF9UeyIge0jXdO46jtUG3iOWROtHKpjg74dG5UNVdYQzVIVEROUlg3TFJRRE5MNTQwWk5WVC4u"
+            target="_blank" rel="noopener">FAIRdata4Research &ndash; Data Access Request Form v1</a>, once you have sponsor approval.
+        </li>
+        <li>
+          <strong>All data included in the request is fully justified</strong> to ensure only the required
+          data is provided.
+        </li>
+        <li>
+          <strong>No identifiable person-level data can be provided.</strong> National Data Opt-Out is applied
+          to ensure those who have opted out of having their data used for research or planning are not
+          included in the dataset. Further data minimisation may include reducing the accuracy of dates by
+          calculating age at events or randomly but consistently shifting the dates.
+        </li>
+        <li>
+          <strong>The researcher must use and provide details of the secure environment they will use</strong>
+          and evidence the suitability of that environment, for example, the NHS England Secure Data
+          Environment. Data will not be sent directly to the researcher. The researcher cannot download the
+          row level data.
+        </li>
+        <li>
+          <strong>Contractual agreements in place, including data sharing agreements.</strong> Data from each
+          Collection Centre will be sent to the secure environment directly and a processing agreement with
+          the organisation supplying the secure environment put in place. This will also include agreed data
+          deletion and archiving expectations. Onward sharing or use outside of the approved project is not
+          permitted.
+        </li>
+      </ol>
+      <p>
+        Terms of reference for the Data Access Committee are available here:
+        <a href="terms-of-reference.html">Terms of Reference</a>.
+      </p>
       <p>
         For details of the data access process, including current conditions for use, see the
         <a href="https://nottinghambrc.nihr.ac.uk/research/health-informatics/dash" target="_blank" rel="noopener">
@@ -78,10 +136,105 @@
       </p>
     </section>
 
+    <section id="protecting-data">
+      <h2>How We Protect Data</h2>
+      <p>
+        Patient data should only ever be used for research in a way that protects confidentiality, keeps
+        data secure and is in the public interest. FAIRdata4Research is built on the
+        <a href="https://www.go-fair.org/fair-principles/" target="_blank" rel="noopener">FAIR Data Principles</a>
+        and the Five Safes Framework, which is also used by NHS England, Health Data Research UK and the
+        Office for National Statistics.
+      </p>
+
+      <h3>Data stays where it was created</h3>
+      <p>
+        We do not build a central copy of patient data. Data stays with the NHS organisation where it was
+        collected, under that organisation&rsquo;s control, for as long as possible. It only leaves once a
+        project has been approved by the Data Access Committee, and only to an approved secure environment.
+        Our work with patients and the public showed this is the approach they prefer.
+      </p>
+
+      <h3>Three stages of protection</h3>
+      <ol class="steps">
+        <li>
+          <strong>Direct care data.</strong> Identifiable data is handled only by each hospital&rsquo;s
+          existing data warehouse team, who already have access as part of the direct care team. They prepare
+          the data for research as follows:
+          <ul>
+            <li>NHS numbers are replaced with a pseudonymised ID. Only the data warehouse team holds the link
+              between the two.</li>
+            <li>All other identifiers, including hospital numbers, are removed.</li>
+            <li>Dates of birth are changed to the first of the month.</li>
+            <li>Postcodes are replaced with a wider statistical area (Lower Layer Super Output Area).</li>
+            <li>The National Data Opt-Out is applied. Anyone who has opted out is not included.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Research view.</strong> The pseudonymised data is held separately from identifiable data,
+          and still within each hospital. Researchers can check whether we hold the data they need using the
+          HDR UK Cohort Discovery tool. This only ever returns counts of patients and gives no access to the
+          data itself.
+        </li>
+        <li>
+          <strong>Research dataset.</strong> Only once a project is approved is data prepared for it:
+          <ul>
+            <li>Only the data that is justified for the project is provided.</li>
+            <li>Data is further minimised, for example by converting dates to ages at events or shifting
+              dates consistently.</li>
+            <li>A new pseudonymised ID is created for each project, so data cannot be linked across projects.</li>
+            <li>The opt-out is checked again for every new extract.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h3>Secure environments only</h3>
+      <p>
+        Data is never sent to researchers directly. It goes straight from each hospital to an approved secure
+        environment, such as an NHS England Secure Data Environment. Any other environment must show it meets
+        similar standards. The environment must:
+      </p>
+      <ul>
+        <li>prevent researchers from downloading row-level data;</li>
+        <li>check everything entering or leaving the environment (an &lsquo;air lock&rsquo;);</li>
+        <li>check that research outputs match what was approved and could not identify anyone.</li>
+      </ul>
+      <p>
+        A data processing agreement is put in place with the organisation providing the environment, which
+        includes agreed data deletion and archiving. Onward sharing or use outside the approved project is
+        not permitted.
+      </p>
+
+      <h3>Independent review of every request</h3>
+      <p>
+        Every application is assessed by the Data Access Committee against the Five Safes:
+        safe projects, safe people, safe settings, safe data and safe outputs. The committee is co-chaired by a
+        lay member and includes patient and public representatives alongside clinical, research, governance
+        and technical leads. Each hospital decides whether its own data is released. Researchers must be named
+        individuals, sign an agreement on how they will use the data and complete training. See the
+        <a href="terms-of-reference.html">Terms of Reference</a> for full details.
+      </p>
+
+      <h3>Oversight and transparency</h3>
+      <ul>
+        <li>The Access Committee reports to the FAIRdata4Research Management Committee, which is accountable to
+          the NUH Research and Innovation Quality and Assurance Committee.</li>
+        <li>The database has a favourable ethical opinion (IRAS 349333), with Nottingham University Hospitals
+          NHS Trust as sponsor.</li>
+        <li>Each hospital keeps a record of all data released and the project it was released for.</li>
+        <li>Approved projects are registered in the HDR UK Data Use Register, and a lay summary of every
+          approved request is published.</li>
+        <li>Approved projects must report their outcomes and impact every year.</li>
+      </ul>
+    </section>
+
     <section id="contact">
       <h2>Contact</h2>
       <p>
-        For contact details and further information, see the
+        For questions about FAIRdata4Research or applying for data, email the Data Access team at
+        <a href="mailto:nuhnt.dataaccess@nhs.net">nuhnt.dataaccess@nhs.net</a>.
+      </p>
+      <p>
+        For further information, see the
         <a href="https://nottinghambrc.nihr.ac.uk/research/health-informatics/dash" target="_blank" rel="noopener">
           NIHR Nottingham BRC Health Informatics DASH page</a>.
       </p>

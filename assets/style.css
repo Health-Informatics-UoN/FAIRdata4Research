@@ -178,3 +178,58 @@ footer.site-footer .wrap {
 footer.site-footer a {
   color: var(--ink-soft);
 }
+
+/* Terms of Reference: numbered clauses */
+.tor p,
+.tor h3 {
+  position: relative;
+  padding-left: 3.25rem;
+}
+
+.tor p.l3 {
+  padding-left: 6.5rem;
+}
+
+.tor p.l3 .num {
+  left: 3.25rem;
+}
+
+.tor .num {
+  position: absolute;
+  left: 0;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.tor h2 .num {
+  position: static;
+  margin-right: 0.75rem;
+}
+
+.tor p.indent {
+  padding-left: 3.25rem;
+}
+
+.tor ul.indent {
+  padding-left: 4.5rem;
+}
+
+@media (max-width: 560px) {
+  .tor p,
+  .tor h3,
+  .tor p.indent {
+    padding-left: 2.5rem;
+  }
+
+  .tor p.l3 {
+    padding-left: 5rem;
+  }
+
+  .tor p.l3 .num {
+    left: 2.5rem;
+  }
+
+  .tor ul.indent {
+    padding-left: 3.75rem;
+  }
+}
